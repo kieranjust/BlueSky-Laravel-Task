@@ -21,6 +21,7 @@ class TodosResource extends JsonResource
                 'description' => $this->description,
                 'due_date' => $this->due_date,
                 'is_complete' => $this->is_complete,
+                'user_id' => $this->user_id,
             ],
             'success' => true,
             'error' => null,

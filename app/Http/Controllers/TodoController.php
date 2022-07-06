@@ -76,6 +76,7 @@ class TodoController extends Controller
                 'description' => $todo->description,
                 'due_date' => $todo->due_date,
                 'is_complete' => $todo->is_complete,
+                'user_id' => $todo->user_id,
             ],
             'success' => true,
             'error' => null,

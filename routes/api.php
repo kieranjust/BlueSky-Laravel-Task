@@ -25,9 +25,9 @@ Route::get('/greeting', function () {
     return 'Hello World';
 });
 
-
 Route::get('/todos', [TodoController::class, 'index']);
 Route::get('/todo/{todo}', [TodoController::class, 'show']);
+Route::get('todo/user/{todo:user_id}', [TodoController::class, 'show']);
 Route::post('/todo',  [TodoController::class, 'store']);
 Route::patch('/todo/{todo}',  [TodoController::class, 'update']);
 Route::delete('/todo/{todo}',  [TodoController::class, 'destroy']);
