@@ -27,7 +27,7 @@ Route::get('/greeting', function () {
 
 Route::get('/todos', [TodoController::class, 'index']);
 Route::get('/todo/{todo}', [TodoController::class, 'show']);
-Route::get('todo/user/{todo:user_id}', [TodoController::class, 'show']);
+
 Route::post('/todo',  [TodoController::class, 'store']);
 Route::patch('/todo/{todo}',  [TodoController::class, 'update']);
 Route::delete('/todo/{todo}',  [TodoController::class, 'destroy']);
@@ -37,3 +37,4 @@ Route::get('/user/{user}', [UserController::class, 'show']);
 Route::post('/user', [UserController::class, 'store']);
 Route::patch('/user/{user}', [UserController::class, 'update']);
 Route::delete('user/{user}', [UserController::class, 'destroy']);
+Route::get('user/{user}/todos', [UserController::class, 'userTodos']);

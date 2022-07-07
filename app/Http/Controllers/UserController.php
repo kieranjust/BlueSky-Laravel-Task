@@ -30,6 +30,11 @@ class UserController extends Controller
         //
     }
 
+    public function userTodos(User $user)
+    {
+        return User::with('todos')->where('id', $user->id)->get();
+    }
+
     /**
      * Store a newly created resource in storage.
      *
