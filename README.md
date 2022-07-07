@@ -39,6 +39,13 @@ Once database & data is filled, Run `php artisan serve` to start server
     POST {{base_url}}/todo
     DELETE {{base_url}}/todo/:id
     PATCH {{base_url}}/todo
+    
+    GET {{base_url}}/users
+    GET {{base_url}}/user/:id
+    GET {{base_url}}/user/:id/todos
+    POST {{base_url}}/user
+    DELETE {{base_url}}/user/:id
+    PATCH {{base_url}}/user
 
 ## Notes
 
