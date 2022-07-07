@@ -21,7 +21,7 @@ DB_DATABASE=todo_api
 # MySQL database username
 DB_USERNAME=root
 # MySQL database password
-DB_PASSWORD=19830913
+DB_PASSWORD=
 ```
 
 ### Prepare migration and seed data
